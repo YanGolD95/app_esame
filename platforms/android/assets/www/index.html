@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html >
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+    </head>
+    <body  style="overflow: hidden;">
+	
+		<div class="ui-grid-a" style="padding-top:15px;">
+			<div class="ui-block-a" align="center" >
+				<table  border="1" style=" border: 5px; border-color:black;">
+					<tr>
+						<td>
+							<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="bluey"  >Connesso</button>
+							<button  style="border-radius: 185px;"  id="bluen"  >Associazione Bluetooth</button>								
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ui-block-b" align="center" >
+				<table  border="1" style=" border: 5px; border-color:black;margin-left:180px;">
+					<tr>
+						<td>
+							<div id="posto1">
+								<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="lv1y"  >1</button>
+								<button  style="border-radius: 185px;"  id="lv1n" value="1" >1</button>								
+							</div>
+						</td>
+						<td>
+							<div id="posto2">
+								<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="lv2y" > 2 </button>
+								<button  style="border-radius: 185px;"  id="lv2n" value="2" > 2 </button>								
+							</div>
+						</td>
+						<td>
+							<div id="posto3">
+								<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="lv3y" > 3 </button> 
+								<button  style="border-radius: 185px;"  id="lv3n" value="3" > 3 </button> 
+							</div>
+						</td>
+						<td>
+							<div id="posto4">
+								<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="lv4y" > 4 </button>
+								<button  style="border-radius: 185px;"  id="lv4n" value="4" > 4 </button> 								
+							</div>
+						</td>
+						<td>
+							<div id="posto5">
+								<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist" id="lv5y" > 5 </button>
+								<button  style="border-radius: 185px;"  id="lv5n" value="5" > 5 </button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>				
+		</div>
+		<div date-role="page" >
+		
+			<div data-role="content">
+				<div id="tasti" >
+				
+				<table align="center" border="1" style=" border: 5px; border-color:black;">
+					<tr>
+						<td>
+							<button  style="border-radius: 185px;"  id="ledoff"  > led spento </button>
+							<button  style="border-radius: 185px;display: none;" class="ui-btn-active ui-state-persist"  id="ledon"  > led acceso </button>
+						</td>
+					</tr>
+				</table>
+				
+					<div class="ui-grid-a" style="margin-top=351px"> 
+						<div class="ui-block-a" >
+							<table align="center" border="1" style=" border: 5px; border-color:black;">
+								<tr>
+									<td>
+										<button  style="border-radius: 185px;">
+											<img src='img/Buttonsu.png' id="su" width="130" style="border-radius: 185px;"/> 
+										</button> 
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button style="border-radius: 185px;" >
+											<img src='img/Buttongiu.png' id="giu" width="130" style="border-radius: 185px;" >    
+										</button> 
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="ui-block-b">
+							<table align="center" border="1" style="border: 5px;  border-color:black; margin-top:72.5px">
+									<tr>
+										<td width="130">
+											<button  style="border-radius: 185px;">
+												<img src='img/Buttonsinistra.png' id="sinistra" width="130" style="border-radius: 185px;"/> 
+											</button> 
+										</td>
+										<td width="130">
+											<button style="border-radius: 185px;" >
+												<img src='img/Buttondestra.png' id="destra" width="130" style="border-radius: 185px;" >    
+											</button> 
+										</td>
+									</tr>
+								</table>
+						</div>
+					</div>
+				</div>
+				<div id="blue" style="display: none;">
+					<h1>Bluetooth </h1>
+					<div id="mainPage">
+						<ul id="deviceList">
+						</ul>
+						<button id="refreshButton">Refresh</button>
+					</div>
+					<div id="detailPage">
+						<div id="resultDiv"></div>
+						<div>
+							
+						</div>
+						<button id="disconnectButton">Disconnect</button>
+					</div>
+					<div id="statusDiv"></div>
+				</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+    </body>
+</html>
